@@ -1,4 +1,5 @@
 import { portfolio } from "@/lib/data";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -23,6 +24,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <ThemeToggle />
         </nav>
       </div>
     </header>
