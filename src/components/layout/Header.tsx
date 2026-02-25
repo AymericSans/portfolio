@@ -1,5 +1,5 @@
 import { portfolio } from "@/lib/data";
-import ThemeToggle from "@/components/ThemeToggle";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -24,7 +24,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <ThemeToggle />
+          <AnimatedThemeToggler className="flex size-8 items-center justify-center rounded-full text-foreground/50 hover:text-foreground hover:bg-foreground/5 transition-colors" />
         </nav>
       </div>
     </header>
