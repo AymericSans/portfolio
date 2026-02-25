@@ -24,7 +24,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <AnimatedThemeToggler className="flex size-8 items-center justify-center rounded-full text-foreground/50 hover:text-foreground hover:bg-foreground/5 transition-colors" />
+          <AnimatedThemeToggler className="flex size-8 items-center justify-center rounded-full text-foreground/50 hover:text-foreground hover:bg-foreground/5 transition-colors [&>svg]:size-4" />
         </nav>
       </div>
     </header>
